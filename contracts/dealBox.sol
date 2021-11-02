@@ -32,9 +32,9 @@ contract DealBox is Ownable, Pausable {
         bool    status;
     }
 
-    constructor() {
-        BlindBox = IBlindBox(0x1db9EB7e514069908D131A150a629E66e2eFd444);
-        SLM = ISLM20(0x2e9c1d9346D399c63e02Ae82158c6c554C1755EF);
+    constructor(address blindBox_, address slm_) {
+        BlindBox = IBlindBox(blindBox_);
+        SLM = ISLM20(slm_);
         payee = payable(msg.sender);
     }
 
