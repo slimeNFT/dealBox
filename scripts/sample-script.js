@@ -16,7 +16,7 @@ async function main() {
   // We get the contract to deploy
   const Greeter = await hre.ethers.getContractFactory("DealBox");
   // blind box and slm-erc20
-  const greeter = await Greeter.deploy("0xaBfD77CEA90e884a3Eb65c3d59465455C57F8d6a", "0x2e9c1d9346D399c63e02Ae82158c6c554C1755EF");
+  const greeter = await Greeter.deploy("0x610E49e9F9bE2f347bB2247331E96c7212852D36", "0x08449FA69d461F5D9DC69F9effaf41Ab3F9dA124");
 
   await greeter.deployed();
 
