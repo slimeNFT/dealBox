@@ -14,7 +14,7 @@ contract DealBox is Ownable, Pausable {
     ISLM20 public SLM;
 
     address payable public payee;
-    string public baseURI;
+    string public baseURL;
 
     uint256 public SLMRate = 1000;
     uint256 public referrerRate = 10;
@@ -114,7 +114,7 @@ contract DealBox is Ownable, Pausable {
         referrerRate = referrerRate_;
     }
 
-    function setURI(string memory uri_) public onlyOwner {
-        baseURI = uri_;
+    function setURL(string memory url_) public onlyOwner {
+        baseURL = url_;
     }
 }
